@@ -10,7 +10,7 @@
 # Usage example:
 # ./clear-cmis-folder.sh http://localhost:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom admin admin
 
-from cmislib import CmisClient
+from cmislib import CmisClient, Folder
 import os, sys
 
 # Defaults
