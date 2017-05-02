@@ -30,7 +30,7 @@ except:
 
 # Connect
 try:
-  client = CmisClient(path, user, password)
+  client = CmisClient(url, user, password)
   repo = client.defaultRepository
 except:
   print 'Failed to connect to server'
