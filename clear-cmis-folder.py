@@ -30,7 +30,7 @@ except:
 
 # Connect
 try:
-  client = CmisClient('http://localhost:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom', 'admin', 'admin')
+  client = CmisClient(path, user, password)
   repo = client.defaultRepository
 except:
   print 'Failed to connect to server'
